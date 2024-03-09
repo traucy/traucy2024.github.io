@@ -1,0 +1,473 @@
+
+
+
+
+
+/*  ____________________________ HEADER/ABOUT/LIST CONTENT  ____________________________*/
+.header {
+  background-color: white;
+  z-index: 1;
+  transition: top 0.3s;
+
+
+  width: 100%;
+  height: auto;
+  padding-top: 0.6em;
+  padding-bottom: 0.6em;
+  padding-right: 1em;
+  padding-left: 1em;
+
+  display: flex;
+  overflow: hidden;
+  justify-content: space-between;
+  flex-direction: row;
+  position: fixed;
+  box-sizing: border-box;
+
+  /* border: red solid; */
+}
+
+
+
+.top-left-container {
+  display: flex;
+  overflow: hidden;
+  width: auto;
+  height: auto;
+
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+
+  /* makes the div not fall out the screen */
+  box-sizing: border-box;
+
+
+  padding-left: 3em;
+  padding-right: 0em;
+  padding-top: 3em;
+  padding-bottom: 0em;
+  background: transparent;
+  background-color: rgba(0, 0, 0, 0);
+
+  /* border-bottom: solid lightgrey 1px; */
+
+  /* border-style: solid;
+  border-color: blue; */
+
+}
+
+.top-right-container {
+  display: flex;
+  overflow: hidden;
+  width: auto;
+  height: auto;
+
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  z-index: 3;
+  right: 0;
+
+  /* makes the div not fall out the screen */
+  box-sizing: border-box;
+
+  padding-left: 0em;
+  padding-right: 3em;
+  padding-top: 3em;
+  padding-bottom: 0em;
+  background: transparent;
+
+  /* border-style: solid;
+  border-color: pink; */
+}
+
+
+.lower-left-container {
+  display: flex;
+  overflow: hidden;
+  width: auto;
+  height: auto;
+
+  flex-direction: column;
+  position: fixed;
+  bottom:0%;
+  z-index: 4;
+
+  /* makes the div not fall out the screen */
+  box-sizing: border-box;
+
+
+  padding-left: 0em;
+  padding-right: 3em;
+  padding-top: 0em;
+  padding-bottom: 3em;
+  background: transparent;
+  background-color: rgba(0, 0, 0, 0);
+
+  /* border-bottom: solid lightgrey 1px; */
+
+  /* border-style: solid;
+  border-color: blue; */
+
+}
+
+.lower-right-container {
+  display: flex;
+  overflow: hidden;
+  width: auto;
+  height: auto;
+
+  flex-direction: column;
+  position: fixed;
+  bottom:0%;
+  right: 0%;
+  z-index: 5;
+
+  /* makes the div not fall out the screen */
+  box-sizing: border-box;
+
+
+  padding-left: 0em;
+  padding-right: 3em;
+  padding-top: 0em;
+  padding-bottom: 3em;
+  background: transparent;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* for email, resume, more about me (2023) */
+.horizontal-container {
+  display: flex;
+  overflow: hidden;
+  flex-direction: row;
+  column-gap: 0.5em;
+  align-items: center;
+  background: none;
+
+  /* border-style: solid;
+  border-color: green; */
+}
+
+
+/* for email, resume, more about me (2024)*/
+.vertical-container {
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  column-gap: 0.5em;
+  justify-content: flex-end;
+  background: none;
+
+  /* border-style: solid;
+  border-color: purple; */
+}
+
+
+/* for the text to align at baseline */
+.one-line {
+  display: flex;
+  overflow: hidden;
+  column-gap: 0.5em;
+  /* align-items: baseline; */
+  align-items: center;
+  width: auto;
+
+  padding-bottom: 0.5em;
+
+  /* border-style: solid;
+  border-color: coral; */
+}
+
+
+
+
+/* iphone X */
+@media screen and (max-width: 550px) {
+
+  /*  ____________________________ HEADER/ABOUT/LIST CONTENT  ____________________________*/
+  .header {
+    background-color: white;
+    z-index: 1;
+    transition: top 0.3s;
+
+
+    width: 100%;
+    height: auto;
+    padding: 16px 16px 16px 16px;
+
+    display: flex;
+    overflow: hidden;
+    justify-content: space-between;
+    flex-direction: row;
+    position: fixed;
+    box-sizing: border-box;
+
+    /* border: red solid; */
+  }
+
+  .top-left-container {
+    display: flex;
+    overflow: hidden;
+    width: auto;
+    height: auto;
+
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+
+    /* makes the div not fall out the screen */
+    box-sizing: border-box;
+
+
+    padding-left: 1.4em;
+    padding-right: 1.4em;
+    padding-top: 1.4em;
+    padding-bottom: 1.4em;
+    background: transparent;
+    background-color: rgba(0, 0, 0, 0);
+
+    /* border-bottom: solid lightgrey 1px; */
+
+    /* border-style: solid;
+    border-color: blue; */
+
+  }
+
+  .top-right-container {
+    /* display: flex;
+    overflow: hidden;
+    width: auto;
+    height: auto;
+
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    right: 0;
+
+    box-sizing: border-box;
+
+    padding-left: 0em;
+    padding-right: 3em;
+    padding-top: 2em;
+    padding-bottom: 0em;
+    background: transparent; */
+    display: none;
+
+  }
+
+
+  .lower-right-container {
+    display: flex;
+    overflow: hidden;
+    /* width: 100%; */
+    height: 30%;
+
+    flex-direction: column;
+    position: fixed;
+    top:0%;
+    left: 0%;
+    z-index: 5;
+
+    /* makes the div not fall out the screen */
+    box-sizing: border-box;
+
+
+    padding-left: 0em;
+    padding-right: 0em;
+    padding-top: 7em;
+    padding-bottom: 0em;
+    background: transparent;
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+
+  /* for email, resume, more about me */
+  .horizontal-container {
+    display: flex;
+    overflow: hidden;
+    flex-direction: row;
+    column-gap: 2em;
+    /* border-style: solid;
+    border-color: purple; */
+  }
+
+
+  /* for the text to align at baseline */
+  .one-line {
+    display: flex;
+    overflow: hidden;
+    column-gap: 0.5em;
+    align-items: baseline;
+    width: auto;
+
+    padding-bottom: 0.5em;
+
+    /* border-style: solid;
+    border-color: coral; */
+  }
+
+}
+
+
+
+/* iphone 5/SE */
+@media screen and (max-width: 270px) {
+
+  /*  ____________________________ HEADER/ABOUT/LIST CONTENT  ____________________________*/
+  .header {
+    background-color: white;
+    z-index: 1;
+    transition: top 0.3s;
+
+    width: 100%;
+    height: auto;
+    padding: 16px 24px 16px 24px;
+
+    display: flex;
+    overflow: hidden;
+    justify-content: space-between;
+    flex-direction: row;
+    position: fixed;
+    box-sizing: border-box;
+
+    /* border: red solid; */
+  }
+
+  .top-left-container {
+    display: flex;
+    overflow: hidden;
+    width: auto;
+    height: auto;
+
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+
+    /* makes the div not fall out the screen */
+    box-sizing: border-box;
+
+
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background: transparent;
+    background-color: rgba(0, 0, 0, 0);
+
+    /* border-bottom: solid lightgrey 1px; */
+
+    /* border-style: solid;
+    border-color: blue; */
+
+  }
+
+  .top-right-container {
+    /* display: flex;
+    overflow: hidden;
+    width: auto;
+    height: auto;
+
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    right: 0;
+
+    box-sizing: border-box;
+
+    padding-left: 0em;
+    padding-right: 3em;
+    padding-top: 2em;
+    padding-bottom: 0em;
+    background: transparent; */
+    display: none;
+
+  }
+
+  .lower-right-container {
+    display: flex;
+    overflow: hidden;
+    /* width: 100%; */
+    height: 20%;
+
+    flex-direction: row;
+    position: fixed;
+    top:0%;
+    left: 0%;
+    z-index: 5;
+
+    /* makes the div not fall out the screen */
+    box-sizing: border-box;
+
+
+    padding-left: 0em;
+    padding-right: 0em;
+    padding-top: 7em;
+    padding-bottom: 0em;
+    background: transparent;
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  /* for email, resume, more about me */
+  .horizontal-container {
+    display: flex;
+    overflow: hidden;
+    flex-direction: row;
+    column-gap: 2em;
+    /* border-style: solid;
+    border-color: purple; */
+  }
+
+
+  /* for the text to align at baseline */
+  .one-line {
+    display: flex;
+    overflow: hidden;
+    column-gap: 0.5em;
+    align-items: baseline;
+    width: auto;
+
+    padding-bottom: 0.5em;
+
+    /* border-style: solid;
+    border-color: coral; */
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* spacer */
