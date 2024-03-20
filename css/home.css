@@ -15,14 +15,15 @@
   overflow: auto;
   z-index: 1;
 
-  padding-left: 3em;
-  padding-right: 3em;
-  align-items: center;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  padding-bottom: 1.5em;
+  gap: 12px;
+
+  align-items: flex-end;
+  /* align-items: center; */
 
   background-color: transparent;
-
-  /* border-style: dashed;
-  border-color: red; */
 
   /* Hidden scroll bar */
   /* Firefox */
@@ -41,10 +42,25 @@
   flex-shrink: 0;
   flex-direction: column;
   position: relative;
+  position: relative;
+
+  /* border: dotted red 1px; */
 }
 
 .card-padding {
-  margin-right: 3em;
+  padding-left: 5em;
+}
+
+.text-width-height {
+  height: 23.5em;
+  padding-top: 0px;
+  align-items: flex-start;
+}
+
+
+.image-width-height {
+  width: 17em;
+  height: 23.5em;
 }
 
 .button-id {
@@ -65,37 +81,37 @@
   display: flex;
   flex-direction: row;
   position: absolute;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   width: 100%;
   left: 0em;
-  bottom: -1em;
+
+  /* make text appear at top */
+  top: -1.1em;
+
+  /* make text appear at bottom */
+  /* bottom: -2em; */
+
   background: none;
   gap: 12px;
   pointer-events:none;
 
-  /* border: dotted red 1px; */
+  /* border: dotted blue 1px; */
 }
 
 /* original size and position  */
 #scale-image {
   transition: all 0.25s ease-out;
-  transform: scale(1.1, 1.1);
+  transform: scale(1, 1);
 }
 
 #scale-image:hover {
   transition: all 0.15s ease-out;
-  transform: scale(1.13, 1.13);
+  transform: scale(1.05, 1.05);
 }
 
-.image-block:hover {
-  /* border-radius: 2em; */
-
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+.rotate-image:hover {
   rotate: 1deg;
   transform: translate(0px,-10px);
-
-  /* box-shadow: 0px 5px 16px #EAEEF4; */
-  /* border: solid darkgrey 1px; */
 }
 
 .image-block {
@@ -109,19 +125,18 @@
 
   transition: all 0.2s ease-in-out;
 
-  /* space for written text below */
-  margin-bottom: 1em;
+  /* space for written text at top */
+  margin-top: 1em;
 
   /* border styling */
   /* padding: 1em; */
-  border-radius: 3px;
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+  border-radius: 8px;
+
 }
 
 .image-box {
 	width: 100%;
   height: inherit;
-  border-radius: 3px;
 
   /* make image fit in box without distortion */
 	overflow: hidden;
@@ -131,7 +146,8 @@
 }
 
 .card-category {
-  border-radius: 3px;
+  border-radius: 8px;
+
   border: 1px solid;
   padding-left: 8px;
   padding-right: 8px;
@@ -161,6 +177,7 @@
     padding-left: 1.4em;
     padding-bottom: 1.4em;
     padding-top: 1.4em;
+    gap: 1em;
 
     /* align-items: center; */
     align-items: flex-end;
@@ -185,9 +202,19 @@
   }
 
   .card-padding {
-    margin-right: 1.4em;
-    margin-bottom: 3em;
+    padding-left: 3em;
+  }
 
+  .text-width-height {
+    height: 14.5em;
+    padding-top: 0px;
+    align-items: flex-start;
+  }
+
+
+  .image-width-height {
+    width: 11.5em;
+    height: 16.5em;
   }
 
 
@@ -218,7 +245,8 @@
 
     /* border styling */
     /* padding: 1em; */
-    border-radius: 3px;
+    border-radius: 8px;
+
     /* box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8); */
     /* border: solid #EAEEF4 1px; */
   }
@@ -227,7 +255,8 @@
   .image-box {
   	width: 100%;
     height: inherit;
-    border-radius: 3px;
+    border-radius: 8px;
+
 
     /* make image fit in box without distortion */
   	overflow: hidden;
@@ -265,6 +294,8 @@
     padding-left: 1em;
     padding-bottom: 1em;
     padding-top: 1em;
+    gap: 1em;
+
     align-items: flex-end;
     background-color: transparent;
 
@@ -290,8 +321,20 @@
   }
 
   .card-padding {
-    margin-right: 1em;
+    margin-right: 2em;
   }
+
+  .text-width-height {
+    height: 13.5em;
+    padding-top: 0px;
+    align-items: flex-start;
+  }
+
+  .image-width-height {
+    width: 10.5em;
+    height: 13.5em;
+  }
+
 
   /* original size and position  */
   #scale-image {
@@ -320,7 +363,8 @@
 
     /* border styling */
     /* padding: 1em; */
-    border-radius: 3px;
+    border-radius: 8px;
+
     /* box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8); */
     /* border: solid #EAEEF4 1px; */
   }
