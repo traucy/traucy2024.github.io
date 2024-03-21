@@ -44,7 +44,7 @@
   position: relative;
   position: relative;
 
-  /* border: dotted red 1px; */
+  /* border: dotted black 1px; */
 }
 
 .card-padding {
@@ -52,15 +52,19 @@
 }
 
 .text-width-height {
-  height: 23.5em;
-  padding-top: 0px;
+  width: 24em;
+  height: 24em;
+  margin-top: 8px;
+
+  display: flex;
   align-items: flex-start;
-}
 
+  overflow: hidden;
+  position: relative;
 
-.image-width-height {
-  width: 17em;
-  height: 23.5em;
+  transition: all 0.2s ease-in-out;
+
+  /* border: dotted red 1px; */
 }
 
 .button-id {
@@ -109,9 +113,15 @@
   transform: scale(1.05, 1.05);
 }
 
+
+.rotate-image {
+  transition: all 0.25s ease-out;
+}
+
 .rotate-image:hover {
   rotate: 1deg;
   transform: translate(0px,-10px);
+  transition: all 0.15s ease-out;
 }
 
 .image-block {
@@ -131,7 +141,6 @@
   /* border styling */
   /* padding: 1em; */
   border-radius: 8px;
-
 }
 
 .image-box {
@@ -144,6 +153,44 @@
 	background-repeat: no-repeat;
   background-position: center;
 }
+
+.image-box-polaroid {
+  width: inherit;
+  height: 100%;
+
+  /* make image fit in box without distortion */
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  /* border-style: dashed;
+  border-color: red; */
+}
+
+.image-block-polaroid {
+  width: inherit;
+  height: 24em;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+
+  transition: all 0.2s ease-in-out;
+
+  border-radius: 8px;
+
+  /* border-style: solid;
+  border-color: blue; */
+}
+
+
+
+.image-width-height {
+  width: 18em;
+  height: 24em;
+}
+
 
 .card-category {
   border-radius: 8px;
@@ -204,16 +251,58 @@
   .card-padding {
     padding-left: 3em;
   }
-
+/*
   .text-width-height {
     height: 14.5em;
     padding-top: 0px;
     align-items: flex-start;
+  } */
+
+  .text-width-height {
+    width: 16.5em;
+    height: 16.5em;
+    margin: 0;
+
+    display: flex;
+    align-items: flex-start;
+    overflow: hidden;
+    position: relative;
+
+    transition: all 0.2s ease-in-out;
+
+    /* border: dotted red 1px; */
+  }
+
+  .image-box-polaroid {
+    width: 100%;
+    height: inherit;
+
+    /* make image fit in box without distortion */
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    /* border-style: dashed;
+    border-color: red; */
+  }
+
+  .image-block-polaroid {
+    width: inherit;
+    height: 16.5em;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 8px;
+
+    /* border-style: solid;
+    border-color: blue; */
   }
 
 
   .image-width-height {
-    width: 11.5em;
+    width: 12em;
     height: 16.5em;
   }
 
@@ -257,122 +346,6 @@
     height: inherit;
     border-radius: 8px;
 
-
-    /* make image fit in box without distortion */
-  	overflow: hidden;
-  	background-size: cover;
-  	background-repeat: no-repeat;
-    background-position: center;
-  }
-
-  .card-category {
-    /* border-radius: 2em;
-    border: 1px solid;
-    padding-left: 8px;
-    padding-right: 8px;
-    padding-top: 4px;
-    padding-bottom: 4px;
-    border-color: #EAEEF4; */
-    display: none;
-  }
-}
-
-/* iphone 5/SE */
-@media screen and (max-width: 360px) {
-  .container {
-    display: flex;
-    height: 100%;
-    background-color: transparent;
-  }
-
-  .box-scroll {
-    display: flex;
-    flex-wrap: nowrap;
-    overflow: auto;
-    z-index: 1;
-
-    padding-left: 1em;
-    padding-bottom: 1em;
-    padding-top: 1em;
-    gap: 1em;
-
-    align-items: flex-end;
-    background-color: transparent;
-
-    /* border-style: dashed;
-    border-color: red; */
-
-    /* Hidden scroll bar */
-    /* Firefox */
-    scrollbar-width: none;
-    /* IE and Edge */
-    -ms-overflow-style: none;
-  }
-
-  /* Hide scrollbar for Chrome, Safari and Opera */
-  .box-scroll::-webkit-scrollbar {
-    display: none;
-  }
-
-  .card {
-    display: flex;
-    flex-shrink: 0;
-    flex-direction: column;
-  }
-
-  .card-padding {
-    margin-right: 2em;
-  }
-
-  .text-width-height {
-    height: 13.5em;
-    padding-top: 0px;
-    align-items: flex-start;
-  }
-
-  .image-width-height {
-    width: 10.5em;
-    height: 13.5em;
-  }
-
-
-  /* original size and position  */
-  #scale-image {
-    transition: all 0.3s ease-out;
-    transform: scale(1.1, 1.1);
-  }
-
-  #scale-image:hover {
-    transition: all 0.2s ease-out;
-    transform: scale(1.15, 1.15);
-  }
-
-
-  .image-block {
-    /* flex: 1 1 50em; */
-    width: 14em;
-    height: 14em;
-    display: flex;
-    align-items: center;
-    overflow: hidden;
-
-    transition: all 0.2s ease-in-out;
-
-    /* space for written text below */
-    margin-bottom: 0.5em;
-
-    /* border styling */
-    /* padding: 1em; */
-    border-radius: 8px;
-
-    /* box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8); */
-    /* border: solid #EAEEF4 1px; */
-  }
-
-
-  .image-box {
-  	width: 100%;
-    height: inherit;
 
     /* make image fit in box without distortion */
   	overflow: hidden;
