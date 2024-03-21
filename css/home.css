@@ -209,6 +209,16 @@
     display: none;
   }
 
+  .rotate-image {
+    transition: all 0.25s ease-out;
+  }
+
+  .rotate-image:hover {
+    rotate: none;
+    transform: none;
+    transition: all 0.15s ease-out;
+  }
+
   .container {
     display: flex;
     height: 100%;
