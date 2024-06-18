@@ -129,6 +129,10 @@ a:visited {
 a:active {
 }
 
+.link-case {
+  color: #FC5F2B;
+}
+
 
 .underline {
   border-bottom: solid black 1px;
@@ -241,10 +245,16 @@ p {
   padding-bottom: 1em;
 
   font-size: 1.1em;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.02em;
   line-height: 1.8em;
   color: var(--darkgrey);
   background-color: none;
+
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
 }
 
 
@@ -575,6 +585,8 @@ p {
     /* borders */
     border: solid 1px;
     border-color: rgba(239, 241, 249, 1);
+    background-color: #FFFFFF;
+
 
     transition: 0.2s;
   }
