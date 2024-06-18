@@ -81,7 +81,7 @@
   	overflow: hidden;
   	background-size: cover;
   	background-repeat: no-repeat;
-    border: dashed blue 1px;
+    /* border: dashed blue 1px; */
   }
 
 }
